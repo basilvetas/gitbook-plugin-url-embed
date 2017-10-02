@@ -3,14 +3,17 @@ var _ = require('lodash');
 module.exports = {
   
   blocks: {
-    embed: {
+    urlembed: {
       process: function(blk) {
 
+        url = blk.body.trim()
         if (this.output.name === 'website') {          
-          return '<iframe src="' + blk.body.trim() + '" style="width: 100%; height: 600px; border: 0px none;"></iframe>';
+          return '<iframe src="' + url + '" style="width: 100%; height: 600px; border: 0px none;"></iframe>';
         }
         else {
-          return "<h1>THIS IS A PDF</h1>"
+          urlArr = _.split(url, "/")          
+          imgName = urlArr[urlArr.length-1]          
+          return '<img src="../assets/' + imgName + '.png" alt="'+ imgName +'">'
         }
 
         return "<div>html</div>"
