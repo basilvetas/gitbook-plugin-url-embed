@@ -1,0 +1,22 @@
+{
+  "name": "gitbook-plugin-url-embed",
+  "description": "Embeds dynamic content in gitbook and static content in pdf",
+  "author": "Basil Vetas",
+  "main": "index.js",
+  "version": "0.0.1",
+  "engines": {
+    "gitbook": ">2.x.x"
+  },
+  "gitbook": {
+    "properties": {}
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.0.0"
+  }
+}
