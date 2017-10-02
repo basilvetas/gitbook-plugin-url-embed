@@ -10,10 +10,10 @@
   "gitbook": {
     "properties": {}
   },
-  "homepage": "",
+  "homepage": "https://github.com/basilvetas/gitbook-plugin-url-embed",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/basilvetas/gitbook-plugin-url-embed"
   },
   "license": "MIT",
   "dependencies": {
